@@ -1,0 +1,133 @@
+/*
+---------------------------------------------------------------
+*
+* footer
+*
+---------------------------------------------------------------
+*/
+
+
+
+
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding-bottom: 60px;
+
+	.guide {
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: right 80%;
+		background-image: url("../images/common/f_logo.png");
+	}
+
+	ul {
+		border-bottom: 1px solid #737373;
+		padding: 20px 0;
+		margin-bottom: 30px;
+		overflow: hidden;
+
+		li {
+			float: left;
+			margin: 0 20px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			a {
+				display: inline-block;
+				color: #fff;
+			}
+
+			&:first-child {
+				a {
+					color: $red;
+					font-weight: bold;
+				}
+			}
+
+		}
+	}
+
+	p {
+		line-height: 1.8;
+	}
+
+	span {
+		color: #888;
+		line-height: 2;
+	}
+}
+
+
+
+@media (max-width: 960px) {
+
+	footer {
+		.guide {
+			background: none;
+		}
+
+		ul {
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+
+			li {
+				display: table-cell;
+				margin: 0;
+				text-align: center;
+				position: relative;
+				width: 33.3%;
+
+				a {
+					display: block;
+					position: relative;
+
+					&:after {
+						content: '';
+						width: 1px;
+						height: 100%;
+						position: relative;
+						background-color: #d2d2d2;
+						position: absolute;
+						left: 0;
+						top: 0;
+					}
+				}
+
+				&:first-child {
+					a {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		p, span {
+			text-align: center;
+			display: block;
+			word-break: keep-all;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+}
+
+
+@media (max-width: 580px) {
+
+	footer {
+		padding-bottom: 40px;
+
+		ul {
+			margin-bottom: 25px;
+		}
+	}
+
+}

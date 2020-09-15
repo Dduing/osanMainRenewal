@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "global.css",
+	"sources": [
+		"../../src/sass/global.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}

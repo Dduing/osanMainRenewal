@@ -1,0 +1,21 @@
+{
+  "name": "Puppy",
+  "version": "0.1.0",
+  "authors": [
+    "demun <hjm01@naver.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.11.2",
+    "jquery-migrate": "*",
+    "fafnur-bxslider": "*",
+    "bpopup": "*"
+  }
+}
